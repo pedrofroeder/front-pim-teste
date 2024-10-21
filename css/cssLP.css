@@ -1,0 +1,154 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url('Fazenda.jpg');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+}
+
+.landing-page {
+    width: 90%;
+    max-width: 1200px;
+    text-align: center;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+}
+
+header h1 {
+    font-size: 2.5em;
+    color: #2c7a7b;
+}
+
+header p {
+    margin-top: 10px;
+    font-size: 1.2em;
+    color: #4a5568;
+}
+
+.cta {
+    margin-top: 30px;
+    padding: 10px;
+}
+
+.cta h2 {
+    font-size: 2em;
+    color: #2f855a;
+}
+
+.cta p {
+    margin-top: 15px;
+    font-size: 1.1em;
+    color: #4a5568;
+}
+
+.cta-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 15px 30px;
+    font-size: 1em;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.cta-button {
+    background-color: #38a169;
+}
+
+.cta-button:hover {
+    background-color: #2f855a;
+    transform: translateY(-2px);
+}
+
+footer {
+    margin-top: 40px;
+    font-size: 0.9em;
+    color: #718096;
+}
+
+@media (max-width: 768px) {
+    .landing-page {
+        width: 95%;
+        padding: 15px;
+    }
+
+    header h1 {
+        font-size: 2em;
+    }
+
+    header p {
+        font-size: 1.1em;
+    }
+
+    .cta h2 {
+        font-size: 1.7em;
+    }
+
+    .cta p {
+        font-size: 1em;
+    }
+
+    .cta-button, .cadastro-button {
+        font-size: 0.9em;
+        padding: 12px 25px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 0 10px;
+    }
+
+    .landing-page {
+        width: 100%;
+        padding: 10px;
+    }
+
+    header h1 {
+        font-size: 1.5em;
+    }
+
+    header p, .cta p {
+        font-size: 0.9em;
+    }
+
+    .cta h2 {
+        font-size: 1.5em;
+    }
+
+    .cta-button, .cadastro-button {
+        font-size: 0.9em;
+        padding: 10px 20px;
+        width: 100%;
+    }
+}
+
+.landing-page {
+    transition: all 0.3s ease-in-out;
+}
+
+@media (max-width: 400px) {
+    .cta-button, .cadastro-button {
+        padding: 8px 15px;
+        font-size: 0.8em;
+    }
+
+    footer {
+        font-size: 0.8em;
+    }
+}

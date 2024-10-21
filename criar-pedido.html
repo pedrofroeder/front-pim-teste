@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criar Novo Pedido</title>
+    <script src="js/criar-pedido.js" defer></script>
+    <link rel="stylesheet" href="css/criar-pedido.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Criar Novo Pedido</h1>
+    <form id="orderForm">
+        <div class="form-group">
+            <label for="supplierEmail">Email do Fornecedor</label>
+            <input type="email" id="supplierEmail" required>
+        </div>
+        <div class="form-group">
+            <label for="product">Produto</label>
+            <input type="text" id="product" required>
+        </div>
+        <div class="form-group">
+            <label for="quantity">Quantidade</label>
+            <input type="text" id="quantity" required>
+        </div>
+        <div class="form-group">
+            <label for="description">Descrição do Pedido</label>
+            <textarea id="description" rows="4" required></textarea>
+        </div>
+        
+        <button type="button" id="sendEmailButton">Enviar Email ao Fornecedor</button>
+    </form>
+</div>
+</body>
+</html>
